@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-11 07:52:18.136488",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "domain",
+  "client_code",
+  "private_key",
+  "column_break_oumj",
+  "amount",
+  "earn_percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "domain",
+   "fieldtype": "Data",
+   "label": "Domain"
+  },
+  {
+   "fieldname": "client_code",
+   "fieldtype": "Data",
+   "label": "Client Code"
+  },
+  {
+   "fieldname": "private_key",
+   "fieldtype": "Long Text",
+   "hidden": 1,
+   "label": "Private Key"
+  },
+  {
+   "fieldname": "column_break_oumj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "label": "Amount Remaining"
+  },
+  {
+   "fieldname": "earn_percentage",
+   "fieldtype": "Percent",
+   "label": "Earn Percentage"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-11-12 11:28:25.658913",
+ "modified_by": "Administrator",
+ "module": "Walaone Integration",
+ "name": "WalaOne Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

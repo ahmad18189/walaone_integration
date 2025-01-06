@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:WalaOne-{MM}-{###}",
+ "creation": "2024-11-11 07:33:16.663437",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "phone",
+  "transaction_type",
+  "reference_id",
+  "amount",
+  "timestamp",
+  "language",
+  "column_break_hclw",
+  "status",
+  "payload",
+  "payload_hash",
+  "authorization"
+ ],
+ "fields": [
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Data",
+   "label": "Transaction Type"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "no_copy": 1,
+   "options": "Pending\nSuccess\nFailed"
+  },
+  {
+   "fieldname": "reference_id",
+   "fieldtype": "Data",
+   "label": "Reference ID",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Data",
+   "label": "Timestamp",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "column_break_hclw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "default": "en",
+   "fieldname": "language",
+   "fieldtype": "Data",
+   "label": "language"
+  },
+  {
+   "fieldname": "authorization",
+   "fieldtype": "Long Text",
+   "label": "authorization",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "payload_hash",
+   "fieldtype": "Text",
+   "label": "payload_hash",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "payload",
+   "fieldtype": "Data",
+   "label": "payload",
+   "no_copy": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-11 10:21:21.126500",
+ "modified_by": "Administrator",
+ "module": "Walaone Integration",
+ "name": "WalaOne Transaction",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
